@@ -1,0 +1,22 @@
+# Visual Studio 관련 파일/폴더
+.vs/
+*.suo
+*.user
+*.userosscache
+*.pdb
+*.ipch
+*.pch
+
+# 빌드 결과물 폴더
+bin/
+obj/
+Debug/
+Release/
+x64/
+x86/
+
+# 기타 캐시 및 대형 파일
+*.log
+*.tmp
+*.cache
+*.db

@@ -1,0 +1,24 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(vector<int> ingredient) {
+    vector<int> temp;
+    int answer = 0;
+
+    for (int i = 0; i < ingredient.size(); i++) {
+        temp.push_back(ingredient[i]);
+
+        if (temp.size() > 3
+            && temp[temp.size() - 1] == 1 && temp[temp.size() - 2] == 3
+            && temp[temp.size() - 3] == 2 && temp[temp.size() - 4] == 1) {
+            answer++;
+
+            for (int j = 0; j < 4; j++) {
+                temp.pop_back();
+            }
+        }
+    }
+    return answer;
+}
